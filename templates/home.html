@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="posts">
+    {% for post in post_list %}
+        <section class="post">
+            <header class="post-header">
+                <h2 class="post-title">{{ post.priority }}</h2>
+
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ post.todo }}
+                    </p>
+                </div>
+        </section>
+    {% endfor %}
+</div><!-- /.blog-post -->
+{% endblock %}
