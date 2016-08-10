@@ -18,6 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-	url(r'^$', 'todo.views.home'),
+	url(r'^home/$', 'todo.views.home'),
 	#url(r'^(?P<my_args>\d+)/$', 'todo.views.detail', name='detail'),
 ]
